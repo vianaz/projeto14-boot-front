@@ -6,7 +6,7 @@ export default function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route path='/' component={<Home />} />
+				<Route path='/' element={<Home />} />
 			</Routes>
 		</BrowserRouter>
 	);
