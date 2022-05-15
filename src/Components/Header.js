@@ -1,16 +1,24 @@
+import { useContext } from "react";
 import styled from "styled-components";
 
+import UserContext from "../Contexts/AppContext";
+import logo from "../Assets/logo.png";
 export default function Header() {
+	const { showModal, setShowModal } = useContext(UserContext);
 	return (
 		<HeaderContainer>
-			<div class='header-content'>
-				<div>BooksBox</div>
+			<div className='header-content'>
+				<img src={logo} alt='logo-booksBox' />
 				<div className='search'>
 					<ion-icon name='search-outline'></ion-icon>
 					<input type='text' placeholder='Search by Title or Author' />
 				</div>
 				<div className='buttons'>
-					<div className='login'>
+					<div
+						className='login'
+						onClick={() => {
+							setShowModal(true);
+						}}>
 						<p>Log In</p>
 					</div>
 				</div>
@@ -26,14 +34,17 @@ const HeaderContainer = styled.header`
 	top: 0;
 	width: 100%;
 	border-bottom: 1px solid #d7d7d7;
-	background-color: #d7d7d7;
 	z-index: 1;
+	background-color: #ffffff;
 	.header-content {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
 		width: 80%;
 		height: 60px;
+		img {
+			height: 50px;
+		}
 	}
 
 	.search {
@@ -72,19 +83,23 @@ const HeaderContainer = styled.header`
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			width: 85px;
-			height: 35px;
+			width: 95px;
+			height: 38px;
 			background: white;
 			border: 1px solid #558b78;
 			border-radius: 10px;
 
 			font-family: "Inter";
 			font-weight: 500;
-			font-size: 16px;
+			font-size: 20px;
 			color: #558b78;
-		}
-		.login:hover {
-			cursor: pointer;
+			transition: background-color 1s;
+
+			&:hover {
+				cursor: pointer;
+				background-color: #ebe8e8;
+				
+			}
 		}
 	}
 `;

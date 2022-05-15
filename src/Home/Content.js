@@ -4,12 +4,6 @@ import Book from "./Book";
 export default function Content() {
 	return (
 		<Main>
-			<div className='filters'>
-				<p>Filter</p>
-				<p>Filter</p>
-				<p>Filter</p>
-				<p>Filter</p>
-			</div>
 			<div className='books'>
 				<Book />
                 <Book />
