@@ -1,16 +1,17 @@
 import styled from "styled-components";
 
-export default function Book() {
+export default function Book({ infos }) {
+	const { name, author, price, image } = infos;
 	return (
 		<Main>
 			<img
-				src='https://images-na.ssl-images-amazon.com/images/I/4119l82gW1L._SX518_BO1,204,203,200_.jpg'
+				src={image}
 				alt='book'
 			/>
 			<div className='book-text'>
-				<p className='title'>JavaScript and JQuery</p>
-				<p className='author'>Jon Ducat</p>
-				<p className='price'>R$ 20,00</p>
+				<p className='title'>{name}</p>
+				<p className='author'>{author}</p>
+				<p className='price'>{`R$ ${price}`}</p>
 			</div>
 		</Main>
 	);
@@ -21,9 +22,9 @@ const Main = styled.div`
 	flex-direction: column;
 	width: 150px;
 
-    &:hover {
-        cursor: pointer;
-    }
+	&:hover {
+		cursor: pointer;
+	}
 	img {
 		border-radius: 10px;
 		object-fit: contain;
@@ -36,9 +37,10 @@ const Main = styled.div`
 			text-overflow: ellipsis;
 			white-space: nowrap;
 			overflow: hidden;
-			margin-bottom: 10px;
+			margin-bottom: 5px;
 			font-size: 18px;
-            margin-top: 10px
+			margin-top: 10px;
+			height: 25px;
 		}
 		.author {
 			margin-bottom: 10px;

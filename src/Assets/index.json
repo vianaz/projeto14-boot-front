@@ -1,0 +1,22 @@
+[
+	{
+		"_id": { "$oid": "628189a52cb2993eb877a2b8" },
+		"name": "Sagarana",
+		"author": "João Guimarães Rosa",
+		"price": "46,61",
+		"category": "brasileiro",
+		"image": "https://images-na.ssl-images-amazon.com/images/I/61OcS3TpIkL._SX350_BO1,204,203,200_.jpg",
+		"date_publish": "01/03/2019",
+		"pages": "336"
+	},
+	{
+		"_id": { "$oid": "628189a52cb2993eb877a2b9" },
+		"name": "Harry Potter e a Pedra Filosofal",
+		"author": "J.K Rowling",
+		"price": "24,90",
+		"category": "fiction",
+		"image": "https://images-na.ssl-images-amazon.com/images/I/41897yAI4LL._SX346_BO1,204,203,200_.jpg",
+		"date_publish": "19/08/2017",
+		"pages": "208"
+	}
+]

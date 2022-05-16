@@ -1,21 +1,16 @@
 import styled from "styled-components";
 import Book from "./Book";
 
+import json from "../Assets/index.json"
+
 export default function Content() {
+	
 	return (
 		<Main>
 			<div className='books'>
-				<Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
+				{json.map((element) => {
+					return <Book infos={element}/>
+				})}
 			</div>
 		</Main>
 	);
