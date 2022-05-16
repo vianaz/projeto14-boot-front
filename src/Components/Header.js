@@ -3,12 +3,15 @@ import styled from "styled-components";
 
 import UserContext from "../Contexts/AppContext";
 import logo from "../Assets/logo.png";
+import { Link } from "react-router-dom";
 export default function Header() {
 	const { showModal, setShowModal } = useContext(UserContext);
 	return (
 		<HeaderContainer>
 			<div className='header-content'>
-				<img src={logo} alt='logo-booksBox' />
+				<Link to='/'>
+					<img src={logo} alt='logo-booksBox' />
+				</Link>
 				<div className='search'>
 					<ion-icon name='search-outline'></ion-icon>
 					<input type='text' placeholder='Search by Title or Author' />
@@ -93,12 +96,11 @@ const HeaderContainer = styled.header`
 			font-weight: 500;
 			font-size: 20px;
 			color: #558b78;
-			transition: background-color 1s;
+			transition: background-color 0.2s;
 
 			&:hover {
 				cursor: pointer;
 				background-color: #ebe8e8;
-				
 			}
 		}
 	}

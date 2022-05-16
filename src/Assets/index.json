@@ -1,22 +1,74 @@
 [
 	{
-		"_id": { "$oid": "628189a52cb2993eb877a2b8" },
 		"name": "Sagarana",
 		"author": "João Guimarães Rosa",
 		"price": "46,61",
-		"category": "brasileiro",
+		"gender": "Classic",
+		"language": "Portugues",
+		"publisher": "Global Editora",
 		"image": "https://images-na.ssl-images-amazon.com/images/I/61OcS3TpIkL._SX350_BO1,204,203,200_.jpg",
+		"description": "Sagarana traz cenários e personagens típicos do interior do país, mais especificamente do sertão de Minas Gerais. A linguagem inventiva do livro é outro aspecto que distinguiria para sempre o autor no campo da literatura brasileira. Ao mesmo tempo em que incorpora fragmentos essenciais da oralidade sertaneja, pescando regionalismos e recuperando antigas expressões de linguagem do sertão, Rosa inova com a criação de neologismos cuidadosamente lapidados. Dentre os nove contos que fazem parte do livro, destacam-se os célebres A hora e vez de Augusto Matraga, Conversa de bois e O burrinho pedrês",
 		"date_publish": "01/03/2019",
 		"pages": "336"
 	},
 	{
-		"_id": { "$oid": "628189a52cb2993eb877a2b9" },
 		"name": "Harry Potter e a Pedra Filosofal",
 		"author": "J.K Rowling",
 		"price": "24,90",
-		"category": "fiction",
+		"gender": "Juvenile",
+		"language": "Portugues",
+		"publisher": "Rocco",
 		"image": "https://images-na.ssl-images-amazon.com/images/I/41897yAI4LL._SX346_BO1,204,203,200_.jpg",
+		"description": "Harry Potter é um garoto cujos pais, feiticeiros, foram assassinados por um poderosíssimo bruxo quando ele ainda era um bebê. Ele foi levado, então, para a casa dos tios que nada tinham a ver com o sobrenatural. Pelo contrário. Até os 10 anos, Harry foi uma espécie de gata borralheira: maltratado pelos tios, herdava roupas velhas do primo gorducho, tinha óculos remendados e era tratado como um estorvo. No dia de seu aniversário de 11 anos, entretanto, ele parece deslizar por um buraco sem fundo, como o de Alice no país das maravilhas, que o conduz a um mundo mágico. Descobre sua verdadeira história e seu destino: ser um aprendiz de feiticeiro até o dia em que terá que enfrentar a pior força do mal, o homem que assassinou seus pais. O menino de olhos verde, magricela e desengonçado, tão habituado à rejeição, descobre, também, que é um herói no universo dos magos. Potter fica sabendo que é a única pessoa a ter sobrevivido a um ataque do tal bruxo do mal e essa é a causa da marca em forma de raio que ele carrega na testa. Ele não é um garoto qualquer, ele sequer é um feiticeiro qualquer ele é Harry Potter, símbolo de poder, resistência e um líder natural entre os sobrenaturais. A fábula, recheada de fantasmas, paredes que falam, caldeirões, sapos, unicórnios, dragões e gigantes, não é, entretanto, apenas um passatempo.",
 		"date_publish": "19/08/2017",
 		"pages": "208"
+	},
+	{
+		"name": "Harry Potter e a Câmara Secreta",
+		"author": "J.K Rowling",
+		"price": "23,50",
+		"gender": "Juvenile",
+		"language": "Portugues",
+		"publisher": "Rocco",
+		"image": "https://images-na.ssl-images-amazon.com/images/I/51SnGLrrJcL._SY344_BO1,204,203,200_QL70_ML2_.jpg",
+		"description": "Depois de férias aborrecidas na casa dos tios trouxas, está na hora de Harry Potter voltar a estudar. Coisas acontecem, no entanto, para dificultar o regresso de Harry. Persistente e astuto, o herói não se deixa intimidar pelos obstáculos e, com a ajuda dos fiéis amigos Weasley, começa o ano letivo na Escola de Magia e Bruxaria de Hogwarts. As novidades não são poucas. Novos colegas, novos professores, muitas e boas descobertas e um grande e perigosos desafio. Alguém ou alguma coisa ameaça a segurança e a tranquilidade dos membros de Hogwarts.",
+		"date_publish": "19/08/2017",
+		"pages": "224"
+	},
+	{
+		"name": "Harry Potter e o Prisioneiro de Azkaban",
+		"author": "J.K Rowling",
+		"price": "31,90",
+		"gender": "Juvenile",
+		"language": "Portugues",
+		"publisher": "Rocco",
+		"image": "https://images-na.ssl-images-amazon.com/images/I/41kT95iZ81L._SX346_BO1,204,203,200_.jpg",
+		"description": "As aulas estão de volta à Hogwarts e Harry Potter não vê a hora de embarcar no expresso a vapor que o levará de volta à escola de bruxaria. Mais uma vez suas férias na rua dos Alfeneiros foi triste e solitária. Com muita ação, humor e magia, 'Harry Potter e o prisioneiro de Azkaban' traz de volta o gigante atrapalhado Rúbeo Hagrid, o sábio diretor Alvo Dumbledore, a exigente professora de transformação Minerva MacGonagall e o novo mestre Lupin, que guarda grandes surpresas para Harry.",
+		"date_publish": "19/08/2017",
+		"pages": "288"
+	},
+	{
+		"name": "Harry Potter e a Ordem da Fênix",
+		"author": "J.K Rowling",
+		"price": "45,90",
+		"gender": "Juvenile",
+		"language": "Portugues",
+		"publisher": "Rocco",
+		"image": "https://images-na.ssl-images-amazon.com/images/I/41SknlxiqHL._SX346_BO1,204,203,200_.jpg",
+		"description": "Harry não é mais um garoto. Aos 15 anos, continua sofrendo a rejeição dos Dursdley, sua estranha família no mundo dos 'trouxas'. Também continua contando com Rony Weasley e Hermione Granger, seus melhores amigos em Hogwarts, para levar adiante suas investigações e aventuras. Mas o bruxinho começa a sentir e descobrir coisas novas, como o primeiro amor e a sexualidade. Nos volumes anteriores, J. K. Rowling mostrou como Harry foi transformado em celebridade no mundo da magia por ter derrotado, ainda bebê, Voldemort, o todopoderoso bruxo das trevas que assassinou seus pais. Neste quinto livro da saga, o protagonista, numa crise típica da adolescência, tem ataques de mau humor com a perseguição da imprensa, que o segue por todos os lugares e chega a inventar declarações que nunca deu. Harry vai enfrentar as investidas de Voldemort sem a proteção de Dumbledore, já que o diretor de Hogwarts é afastado da escola. E vai ser sem a ajuda de seu protetor que o jovem herói enfrentará descobertas sobre a personalidade controversa de seu pai, Tiago Potter, e a morte de alguém muito próximo.",
+		"date_publish": "19/08/2017",
+		"pages": "640"
+	},
+	{
+		"name": "Harry Potter e o Cálice de Fogo",
+		"author": "J.K Rowling",
+		"price": "22,41",
+		"gender": "Juvenile",
+		"language": "Portugues",
+		"publisher": "Rocco",
+		"image": "https://m.media-amazon.com/images/I/511p8jnsATL.jpg",
+		"description": "O Torneio Tribruxo será realizado em Hogwarts. Apenas bruxos acima dos dezessete anos de idade podem se inscrever - mas isso não impede que Harry sonhe em vencer a competição. E então, no Dia das Bruxas, quando o Cálice de Fogo faz sua seleção, Harry se surpreende ao ver que seu nome é um dos que a taça mágica escolhe. Ele terá de enfrentar tarefas mortais, dragões e bruxos das trevas, mas com a ajuda de seus melhores amigos, Ron e Hermione, talvez ele consiga sair dessa - vivos!",
+		"date_publish": "19/08/2017",
+		"pages": "750"
 	}
 ]

@@ -26,5 +26,6 @@ const Main = styled.main`
 	justify-content: flex-start;
 	align-items: flex-start;
 	margin-top: 80px;
-	width: 70%;
+	margin-left: 20px;
+	margin-bottom: 80px;
 `;

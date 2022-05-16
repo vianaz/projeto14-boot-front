@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import styled from "styled-components";
+import UserContext from "../Contexts/AppContext";
 
 export default function LoginModal() {
+	const { setShowModal } = useContext(UserContext);
 	const [showSignUp, setShowSignUp] = useState(false);
 	return (
 		<Main>
@@ -10,6 +12,11 @@ export default function LoginModal() {
 					<>
 						<ContainerTitle>
 							<p>Create account</p>
+							<ion-icon
+								name='close-outline'
+								onClick={() => {
+									setShowModal(false);
+								}}></ion-icon>
 						</ContainerTitle>
 						<SignUp>
 							<FormsSignUp>
@@ -42,6 +49,11 @@ export default function LoginModal() {
 					<>
 						<ContainerTitle>
 							<p>Log in to BooksBox</p>
+							<ion-icon
+								name='close-outline'
+								onClick={() => {
+									setShowModal(false);
+								}}></ion-icon>
 						</ContainerTitle>
 						<Inputs>
 							<input type='text' placeholder='Email' />
@@ -80,7 +92,7 @@ const Content = styled.div`
 	align-items: center;
 	position: absolute;
 	top: 5px;
-	min-width: 390px;
+	min-width: 340px;
 	min-height: 325px;
 	background-color: white;
 	border-radius: 15px;
@@ -88,16 +100,24 @@ const Content = styled.div`
 const ContainerTitle = styled.div`
 	display: flex;
 	justify-content: center;
-	height: 70px;
+	height: 60px;
 	width: 90%;
 	font-family: "Inter";
-	font-size: 32px;
+	font-size: 20px;
 	font-weight: 400;
 
 	border-bottom: 1px solid #ebf1e9;
 	p {
 		margin-top: 20px;
 		letter-spacing: 0.75px;
+	}
+	ion-icon {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		&:hover {
+			cursor: pointer;
+		}
 	}
 `;
 const Inputs = styled.form`
@@ -110,9 +130,9 @@ const Inputs = styled.form`
 	input {
 		font-family: "Inter";
 		font-weight: 500;
-		font-size: 18px;
-		height: 40px;
-		width: 340px;
+		font-size: 15px;
+		height: 35px;
+		width: 300px;
 		margin: 10px;
 
 		border: 1px solid #d2d8d0;
@@ -128,10 +148,10 @@ const Inputs = styled.form`
 	button {
 		font-family: "Inter";
 		font-weight: 500;
-		font-size: 22px;
+		font-size: 20px;
 		letter-spacing: 1px;
 		height: 40px;
-		width: 355px;
+		width: 310px;
 		margin-top: 15px;
 		border: none;
 		border-radius: 15px;
@@ -162,10 +182,10 @@ const SignUp = styled.div`
 	margin-top: 10px;
 	p {
 		font-family: "Inter";
-		font-weight: 500;
-		font-size: 22px;
+		font-weight: 400;
+		font-size: 18px;
 		letter-spacing: 1px;
-		margin-left: 10px;
+		margin-left: 15px;
 	}
 `;
 const FormsSignUp = styled.form`
@@ -175,11 +195,11 @@ const FormsSignUp = styled.form`
 	align-items: center;
 	margin-bottom: 10px;
 	input {
-		width: 345px;
+		width: 300px;
 		height: 35px;
 		margin: 10px;
 		font-family: "Inter";
-		font-size: 18px;
+		font-size: 15px;
 		border: 1px solid #d2d8d0;
 		border-radius: 15px;
 		padding-left: 15px;
@@ -194,16 +214,16 @@ const FormsSignUp = styled.form`
 		display: flex;
 		input {
 			margin: 5px;
-			width: 160px;
+			width: 135px;
 		}
 	}
 	button {
 		font-family: "Inter";
 		font-weight: 500;
-		font-size: 22px;
+		font-size: 18px;
 		letter-spacing: 1px;
 		height: 40px;
-		width: 350px;
+		width: 310px;
 		margin-top: 25px;
 		margin-bottom: 15px;
 		border: none;
