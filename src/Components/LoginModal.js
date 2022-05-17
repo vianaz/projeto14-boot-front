@@ -1,10 +1,41 @@
 import { useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
+import axios from 'axios';
 import UserContext from "../Contexts/AppContext";
 
 export default function LoginModal() {
-	const { setShowModal } = useContext(UserContext);
+	const navigate = useNavigate();
+	const { setShowModal, APILink } = useContext(UserContext);
 	const [showSignUp, setShowSignUp] = useState(false);
+
+	const [user, setUser] = useState("");
+	const [token, setToken] = useState("");
+	const [formInput, setFormInput] = useState("");
+	
+	function handleInput(e) {
+		formInput[e.target.name] = e.target.value;
+		setFormInput(formInput);
+	}
+
+	function handleSubmit(e) {
+		e.preventDefault();
+
+		const { name, email, password } = formInput;
+
+		axios.post(`${APILink}/signup`, {name, email, password})
+		.then(({ data }) => {
+			const { name, email, token } = data;
+			setUser({ name, email });
+			setToken( { token });
+			localStorage.setItem("bootstore_token", JSON.stringify(token));
+			navigate("/"); 
+		})
+		.catch( (error) => {
+			console.log(error);
+		})
+	}
+
 	return (
 		<Main>
 			<Content>
@@ -20,19 +51,19 @@ export default function LoginModal() {
 						</ContainerTitle>
 						<SignUp>
 							<FormsSignUp>
-								<input type='text' placeholder='Email' />
-								<input type='password' placeholder='Password' />
+								<input type='text' placeholder='Email' onChange={handleInput} name='email'/>
+								<input type='password' placeholder='Password' onChange={handleInput} name='password'/>
 							</FormsSignUp>
 							<p>Personal Information</p>
 							<FormsSignUp>
 								<div className='name'>
-									<input type='text' placeholder='Name' />
+									<input type='text' placeholder='Name' onChange={handleInput} name='name'/>
 									<input type='text' placeholder='Last name' />
 								</div>
 								<input type='text' placeholder='Phone number' />
 								<input type='text' placeholder='Country' />
 								<input type='text' placeholder='City / Town' />
-								<button>Create Account</button>
+								<button onClick={handleSubmit} >Create Account</button>
 								<p>
 									Already have an account?{" "}
 									<span
